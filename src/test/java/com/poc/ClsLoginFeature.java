@@ -55,11 +55,12 @@ public class ClsLoginFeature {
 		System.out.println("Given  Implemented");
       //throw new PendingException();
   }
-  @When("^Access Glide Path Analyzer application at https://gpa\\.pimco\\.com/login$")
-  public void access_Glide_Path_Analyzer_application_at_https_gpa_pimco_com_login() throws Throwable {
+	
+  @When("^Access National Merit application at https://www\\.nationalmerit\\.org$")
+  public void access_National_Merit_application_at_https_www_nationalmerit_org() throws Throwable {
       // Write code here that turns the phrase above into concrete actions
 	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-	  driver.get("https://gpa.pimco.com");
+	  driver.get("https://www.nationalmerit.org");
 	  
 	  System.out.println("When  Implemented");
 	  //throw new PendingException();
@@ -67,15 +68,14 @@ public class ClsLoginFeature {
   @Then("^I verify the displayed Web Elements on Login Page$")
   public void i_verify_the_displayed_Web_Elements_on_Login_Page() throws Throwable {
       // Write code here that turns the phrase above into concrete actions
-		System.out.println("getTagName Value==="+ driver.findElement(By.id("input_0")).getTagName());
 		System.out.println("Then should be Implemented");
 	
-		AssertJUnit.assertEquals("Glide Path Analyzer", driver.getTitle());
+		AssertJUnit.assertEquals("National Merit Scholarship Corporation - Home", driver.getTitle());
 	  
-	 	AssertJUnit.assertTrue(driver.getPageSource().contains("Email"));
-	AssertJUnit.assertTrue(driver.getPageSource().contains("Password"));
+	 	AssertJUnit.assertTrue(driver.getPageSource().contains("Mission"));
+	AssertJUnit.assertTrue(driver.getPageSource().contains("Sponsorship"));
 	//Assert.assertTrue(driver.getPageSource().contains("SIGN IN"));
-	AssertJUnit.assertTrue(driver.getPageSource().contains("Forgot my password"));
+	AssertJUnit.assertTrue(driver.getPageSource().contains("Scholarship Programs"));
 	
 	 File src= ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 	  try {
