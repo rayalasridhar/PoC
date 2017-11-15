@@ -42,7 +42,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 @SuppressWarnings("unused")
 public class ClsLoginFeature {
   
-  static String driverPath = "IE driver path";
+  //static String driverPath = "IE driver path";
 	public WebDriver driver;
 	
 	@Given("^I launch Chrome web browser$")
@@ -65,7 +65,7 @@ public class ClsLoginFeature {
 	  System.out.println("When  Implemented");
 	  //throw new PendingException();
   }
-  @Then("^I verify the displayed Web Elements on Login Page$")
+  @Then("^I verify the displayed Web Elements on Home Page$")
   public void i_verify_the_displayed_Web_Elements_on_Login_Page() throws Throwable {
       // Write code here that turns the phrase above into concrete actions
 		System.out.println("Then should be Implemented");
@@ -76,6 +76,8 @@ public class ClsLoginFeature {
 	AssertJUnit.assertTrue(driver.getPageSource().contains("Sponsorship"));
 	//Assert.assertTrue(driver.getPageSource().contains("SIGN IN"));
 	AssertJUnit.assertTrue(driver.getPageSource().contains("Scholarship Programs"));
+	
+	
 	
 	 File src= ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 	  try {
