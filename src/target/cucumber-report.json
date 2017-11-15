@@ -4,15 +4,15 @@
     "elements": [
       {
         "line": 4,
-        "name": "Validate the Web Elements on Login Page",
+        "name": "Validate the Web Elements on Home Page",
         "description": "",
-        "id": "login-page-fields;validate-the-web-elements-on-login-page",
+        "id": "login-page-fields;validate-the-web-elements-on-home-page",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 7800138323,
+              "duration": 8093292810,
               "status": "passed"
             },
             "line": 5,
@@ -24,25 +24,70 @@
           },
           {
             "result": {
-              "duration": 3202465096,
+              "duration": 9542550214,
               "status": "passed"
             },
             "line": 6,
-            "name": "Access Glide Path Analyzer application at https://gpa.pimco.com/login",
+            "name": "Access National Merit application at https://www.nationalmerit.org",
             "match": {
-              "location": "ClsLoginFeature.access_Glide_Path_Analyzer_application_at_https_gpa_pimco_com_login()"
+              "location": "ClsLoginFeature.access_National_Merit_application_at_https_www_nationalmerit_org()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 5705559395,
+              "duration": 5773418043,
               "status": "passed"
             },
             "line": 7,
-            "name": "I verify the displayed Web Elements on Login Page",
+            "name": "I verify the displayed Web Elements on Home Page",
             "match": {
               "location": "ClsLoginFeature.i_verify_the_displayed_Web_Elements_on_Login_Page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 10,
+        "name": "Validate Search functionality on the Home Page",
+        "description": "",
+        "id": "login-page-fields;validate-search-functionality-on-the-home-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1515076,
+              "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat com.poc.pomSearchFeature.i_Validate_the_Web_Elements_on_Home_Page(pomSearchFeature.java:34)\r\n\tat ✽.Given I Validate the Web Elements on Home Page(pomLogin.feature:11)\r\n",
+              "status": "pending"
+            },
+            "line": 11,
+            "name": "I Validate the Web Elements on Home Page",
+            "match": {
+              "location": "pomSearchFeature.i_Validate_the_Web_Elements_on_Home_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "I key Text in Search Text Box and Click Search icon",
+            "match": {
+              "location": "pomSearchFeature.i_key_Text_in_Search_Text_Box_and_Click_Search_icon()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "I verify the displayed results",
+            "match": {
+              "location": "pomSearchFeature.i_verify_the_displayed_results()"
             },
             "keyword": "Then "
           }

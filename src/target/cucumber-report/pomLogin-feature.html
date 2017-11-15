@@ -54,7 +54,7 @@ $(document).ready(function() {
           <tr class="info">
             <td>CucSelProtPoC</td>
                           <td>1</td>
-                        <td>13 Nov 2017, 16:13</td>
+                        <td>14 Nov 2017, 21:21</td>
           </tr>
         </tbody>
       </table>
@@ -96,17 +96,17 @@ $(document).ready(function() {
 
         <tr>
       <td class="tagname"><a id="stats-Login page fields" href="pomLogin-feature.html">Login page fields</a></td>
-            <td id="stats-number-scenarios-Login page fields">1</td>
-      <td id="stats-number-scenarios-passed-Login page fields">1</td>
+            <td id="stats-number-scenarios-Login page fields">2</td>
+      <td id="stats-number-scenarios-passed-Login page fields">2</td>
       <td id="stats-number-scenarios-failed-Login page fields">0</td>
-      <td id="stats-number-steps-Login page fields">3</td>
+      <td id="stats-number-steps-Login page fields">6</td>
       <td id="stats-number-steps-passed-Login page fields">3</td>
       <td id="stats-number-steps-failed-Login page fields"    >0</td>
-      <td id="stats-number-steps-skipped-Login page fields"   >0</td>
-      <td id="stats-number-steps-pending-Login page fields"   >0</td>
+      <td id="stats-number-steps-skipped-Login page fields"      class="skipped" >2</td>
+      <td id="stats-number-steps-pending-Login page fields"      class="pending" >1</td>
       <td id="stats-number-steps-undefined-Login page fields" >0</td>
       <td id="stats-number-steps-missing-Login page fields"   >0</td>
-      <td id="stats-duration-Login page fields" class="duration-format">16s 708ms</td>
+      <td id="stats-duration-Login page fields" class="duration-format">23s 410ms</td>
       <td id="stats-status-Login page fields" class="passed">Passed</td>
     </tr>
   </table>
@@ -124,16 +124,33 @@ $(document).ready(function() {
 
       <div class="feature-tags"></div>
     
-    <div class="passed"><span class="element-keyword">Scenario: </span><span class="element-name">Validate the Web Elements on Login Page</span></div>
-          <div class="passed"><span class="step-keyword">Given  </span><span class="step-name">I launch Chrome web browser</span><span class="step-duration">07s 800ms</span></div>
+    <div class="passed"><span class="element-keyword">Scenario: </span><span class="element-name">Validate the Web Elements on Home Page</span></div>
+          <div class="passed"><span class="step-keyword">Given  </span><span class="step-name">I launch Chrome web browser</span><span class="step-duration">08s 093ms</span></div>
       
             <div></div>
       <div></div>
-          <div class="passed"><span class="step-keyword">When  </span><span class="step-name">Access Glide Path Analyzer application at https://gpa.pimco.com/login</span><span class="step-duration">03s 202ms</span></div>
+          <div class="passed"><span class="step-keyword">When  </span><span class="step-name">Access National Merit application at https://www.nationalmerit.org</span><span class="step-duration">09s 542ms</span></div>
       
             <div></div>
       <div></div>
-          <div class="passed"><span class="step-keyword">Then  </span><span class="step-name">I verify the displayed Web Elements on Login Page</span><span class="step-duration">05s 705ms</span></div>
+          <div class="passed"><span class="step-keyword">Then  </span><span class="step-name">I verify the displayed Web Elements on Home Page</span><span class="step-duration">05s 773ms</span></div>
+      
+            <div></div>
+      <div></div>
+        
+    <br>
+      <div class="feature-tags"></div>
+    
+    <div class="passed"><span class="element-keyword">Scenario: </span><span class="element-name">Validate Search functionality on the Home Page</span></div>
+          <div class="pending"><span class="step-keyword">Given  </span><span class="step-name">I Validate the Web Elements on Home Page</span><span class="step-duration">001ms</span><div class="output_message"><input class="output_collapse" id="output_79092014" type="checkbox"><label for="output_79092014">cucumber.api.PendingException: TODO: implement me</label><div>	at com.poc.pomSearchFeature.i_Validate_the_Web_Elements_on_Home_Page(pomSearchFeature.java:34)<br/>	at ✽.Given I Validate the Web Elements on Home Page(pomLogin.feature:11)<br/></div></div></div>
+      
+            <div></div>
+      <div></div>
+          <div class="skipped"><span class="step-keyword">When  </span><span class="step-name">I key Text in Search Text Box and Click Search icon</span><span class="step-duration">000ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="skipped"><span class="step-keyword">Then  </span><span class="step-name">I verify the displayed results</span><span class="step-duration">000ms</span></div>
       
             <div></div>
       <div></div>

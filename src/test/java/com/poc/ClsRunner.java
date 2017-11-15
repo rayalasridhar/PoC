@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 @CucumberOptions
 (
 	plugin = "json:src/target/cucumber-report.json", 
-	features="src/test/java/resources",
+	features="src/test/resources",
 	strict = false,
 format = { "pretty", "html:target/cucumber", "json:target/cucumber.json" } 
 	
