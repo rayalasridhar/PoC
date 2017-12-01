@@ -7,10 +7,13 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
+
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.BeforeTest;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterTest;
-
+import io.selendroid.standalone.SelendroidConfiguration;
 public class pomSearchFeature {
   @Test(dataProvider = "dp")
   public void f(Integer n, String s) {
@@ -31,6 +34,9 @@ public class pomSearchFeature {
   @Given("^I Validate the Web Elements on Home Page$")
   public void i_Validate_the_Web_Elements_on_Home_Page() throws Throwable {
       // Write code here that turns the phrase above into concrete actions
+	  WebDriver drvr=new FirefoxDriver();
+	  drvr.get("https://www.nationalmerit.org");
+	  
       throw new PendingException();
   }
 
@@ -47,6 +53,12 @@ public class pomSearchFeature {
   }
 
 
+  public void testRunner() throws Exception {
+	  SoapUIProTestCaseRunner runner = new SoapUIProTestCaseRunner();
+	  runner.setProjectFile("SoapUIWorkspace/Sample-soapui-project.xml");
+	  runner.setPrintReport(true); 
+	  runner.run();
+	  }
   
   @AfterTest
   public void afterTest() {

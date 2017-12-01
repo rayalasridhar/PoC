@@ -12,7 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 8093292810,
+              "duration": 9931940027,
               "status": "passed"
             },
             "line": 5,
@@ -24,7 +24,7 @@
           },
           {
             "result": {
-              "duration": 9542550214,
+              "duration": 6795430457,
               "status": "passed"
             },
             "line": 6,
@@ -36,7 +36,7 @@
           },
           {
             "result": {
-              "duration": 5773418043,
+              "duration": 7900556093,
               "status": "passed"
             },
             "line": 7,
@@ -58,9 +58,9 @@
         "steps": [
           {
             "result": {
-              "duration": 1515076,
-              "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat com.poc.pomSearchFeature.i_Validate_the_Web_Elements_on_Home_Page(pomSearchFeature.java:34)\r\n\tat ✽.Given I Validate the Web Elements on Home Page(pomLogin.feature:11)\r\n",
-              "status": "pending"
+              "duration": 5304165142051,
+              "error_message": "org.openqa.selenium.SessionNotCreatedException: Unable to create new remote session. desired capabilities \u003d Capabilities [{marionette\u003dtrue, firefoxOptions\u003dorg.openqa.selenium.firefox.FirefoxOptions@6273c5a4, browserName\u003dfirefox, moz:firefoxOptions\u003dorg.openqa.selenium.firefox.FirefoxOptions@6273c5a4, version\u003d, platform\u003dANY}], required capabilities \u003d Capabilities [{}]\nBuild info: version: \u0027unknown\u0027, revision: \u00271969d75\u0027, time: \u00272016-10-18 09:43:45 -0700\u0027\nSystem info: host: \u0027L-156059258\u0027, ip: \u0027169.254.208.170\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_151\u0027\nDriver info: driver.version: FirefoxDriver\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:91)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:141)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:241)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:128)\r\n\tat org.openqa.selenium.firefox.FirefoxDriver.\u003cinit\u003e(FirefoxDriver.java:259)\r\n\tat org.openqa.selenium.firefox.FirefoxDriver.\u003cinit\u003e(FirefoxDriver.java:247)\r\n\tat org.openqa.selenium.firefox.FirefoxDriver.\u003cinit\u003e(FirefoxDriver.java:242)\r\n\tat org.openqa.selenium.firefox.FirefoxDriver.\u003cinit\u003e(FirefoxDriver.java:238)\r\n\tat org.openqa.selenium.firefox.FirefoxDriver.\u003cinit\u003e(FirefoxDriver.java:127)\r\n\tat com.poc.pomSearchFeature.i_Validate_the_Web_Elements_on_Home_Page(pomSearchFeature.java:37)\r\n\tat ✽.Given I Validate the Web Elements on Home Page(pomLogin.feature:11)\r\n",
+              "status": "failed"
             },
             "line": 11,
             "name": "I Validate the Web Elements on Home Page",
@@ -106,4 +106,4 @@
       }
     ]
   }
-]
+]]

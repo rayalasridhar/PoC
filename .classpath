@@ -68,8 +68,14 @@
 	<classpathentry exported="true" kind="lib" path="D:/Selenium/features/com.eviware.soapui.soapui_feature_4.0.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="D:/Selenium/selenium-server-standalone-3.0.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="D:/JAR Files/cucumber-reporting-3.12.0.jar"/>
-	<classpathentry kind="lib" path="D:/JAR Files/cucumber-testng-1.2.5.jar"/>
-	<classpathentry kind="lib" path="D:/JAR Files/testng-6.11.jar"/>
-	<classpathentry kind="lib" path="D:/JAR Files/jcommander-1.27.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/JAR Files/cucumber-testng-1.2.5.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/JAR Files/testng-6.11.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/JAR Files/jcommander-1.27.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/JAR Files/selendroid-standalone-0.17.0-with-dependencies.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/JAR Files/poi-ooxml-3.9.jar"/>
+	<classpathentry kind="lib" path="D:/JAR Files/poi-3.17.jar"/>
+	<classpathentry kind="lib" path="D:/JAR Files/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="D:/JAR Files/soupui-pro-crack-5.0.0.jar"/>
+	<classpathentry kind="lib" path="D:/JAR Files/jxl-2.6.12.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

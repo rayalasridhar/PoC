@@ -48,7 +48,7 @@ public class ClsLoginFeature {
 	@Given("^I launch Chrome web browser$")
   public void i_launch_Chrome_web_browser() throws Throwable {
       // Write code here that turns the phrase above into concrete actions
-		 System.setProperty("webdriver.chrome.driver","C:\\chromedriver.exe");
+		 System.setProperty("webdriver.chrome.driver","chromedriver.exe");
          //create chrome instance
          driver = new ChromeDriver(); 
          driver.manage().window().maximize();
@@ -69,7 +69,7 @@ public class ClsLoginFeature {
   public void i_verify_the_displayed_Web_Elements_on_Login_Page() throws Throwable {
       // Write code here that turns the phrase above into concrete actions
 		System.out.println("Then should be Implemented");
-	
+		
 		AssertJUnit.assertEquals("National Merit Scholarship Corporation - Home", driver.getTitle());
 	  
 	 	AssertJUnit.assertTrue(driver.getPageSource().contains("Mission"));
